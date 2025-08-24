@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 5%;
+}
+
+header {
+    text-align: center;
+    background-color: #191f35;
+    
+}
+
+header h1,
+header h2 {
+    font-weight: normal;
+    line-height: 1;
+}
+
+header h2 {
+    margin-top: 5px;
+    opacity: 0.5;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 1%;
+}
+
+h4 {
+    margin-top: 5%;
+}
+
+/* Íconos */
+.habilidades i{
+    font-size: 0.8em;
+    color: #5106e8;
+    background: #fff;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+/* Íconos */
+.experiencia i{
+    font-size: 0.8em;
+    color: #fff;
+    background: #4ba9c8;
+    border-radius: 2em;
+    padding: 2px;
+    width: 1.5em;
+    height: 1.5em;
+    text-align: center;
+    vertical-align: center;
+    line-height: 1.5em;
+}
+
+/* contenedor general */
+.contenedor{
+    background-color: #1f253D;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: 0 auto;
+        position: relative;
+    z-index: 1;
+}
+
+/* CABECERA */
+.cabecera {
+    position: relative;
+}
+
+/* imagen de fondo de cabecera */
+.cabecera::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/fondo1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.contenedor_foto_perfil {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    border: 7px solid #4ba9c8;
+    margin: 5%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor_foto_perfil img {
+    width: 100%;
+    height: auto;
+    object-fit: block;
+}
+
+.nombre_puesto {
+    display: inline-block;
+    vertical-align: center;
+    margin-left: 50%;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+.contenido_cv{
+    display: flex;
+    width: 100%;
+}
+
+
+.habilidades {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #468ad8;
+    padding: 5%;
+    width: 28%;
+    height: 2200px; /* 🔹 aquí defines el largo fijo */
+}
+
+.habilidades ul {
+    margin-left: 10%;
+}
+
+.carta_presentacion {
+    text-align: justify;
+}
+
+
+/* Puedes ajustar los colores y tamaños a tu gusto */
+
+.grafico {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+.sector {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    clip: rect(0px, 60px, 60px, 30px);
+}
+
+.sector1 {
+    background: conic-gradient(#10ddc5 0% 33%, transparent 33% 100%);
+    z-index: 1;
+}
+
+.sector2 {
+    background: conic-gradient(transparent 0% 33%, #2c5677 33% 66%, transparent 66% 100%);
+    z-index: 2;
+}
+
+.sector3 {
+    background: conic-gradient(transparent 0% 33%, #360cc2 transparent 33% 100%);
+    z-index: 3;
+}
+
+.donut-hole {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+
+.habilidades{
+    display: inline-block;
+    margin-top: 1%;
+    vertical-align: middle;
+}
+
+.experiencia {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    width: 50%;
+}
+
+.experiencia h3 {
+    text-align: right;
+}
+
+.nombre_empresa {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.año_puesto {
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    width: 49%;
+}
+
+.descripcion_puesto {
+    margin-top: 3%;
+    text-align: justify;
+}
