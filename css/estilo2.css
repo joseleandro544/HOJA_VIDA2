@@ -1,0 +1,236 @@
+/* css/estilo1.css */
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #2c3e50, #1a2530);
+    color: white;
+}
+
+.contenedor_foto_perfil {
+    margin-right: 30px;
+}
+
+.foto_perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+}
+
+.nombre_propuesto h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.nombre_propuesto h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ecf0f1;
+}
+
+/* Contenido principal */
+.contenido_cv {
+    display: flex;
+}
+
+/* Sección izquierda */
+.habilidades {
+    flex: 1;
+    padding: 30px;
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+.habilidades h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.habilidades hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(52, 152, 219, 0.5), rgba(52, 152, 219, 1), rgba(52, 152, 219, 0.5));
+    margin-bottom: 15px;
+}
+
+.carta_presentacion {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Gráfico de habilidades */
+.grafico {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    background: conic-gradient(
+        #3498db 0% 70%, 
+        #2ecc71 70% 85%, 
+        #e74c3c 85% 100%
+    );
+}
+
+.donut-hole {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: #34495e;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+}
+
+.habilidad {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.habilidades ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.habilidades li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.habilidades li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.habilidades a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.habilidades a:hover {
+    text-decoration: underline;
+}
+
+/* Sección derecha */
+.experiencia {
+    flex: 2;
+    padding: 30px;
+    background-color: #ecf0f1;
+}
+
+.experiencia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.experiencia hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, rgba(44, 62, 80, 0.5), rgba(44, 62, 80, 1), rgba(44, 62, 80, 0.5));
+    margin-bottom: 20px;
+}
+
+.experiencia h4 {
+    color: #2c3e50;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nombre_empresa {
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.año_puesto {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.descripcion_puesto {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.experiencia ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.experiencia li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.experiencia li:before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Iconos */
+.fas {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .contenido_cv {
+        flex-direction: column;
+    }
+    
+    .cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .contenedor_foto_perfil {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .nombre_propuesto h1 {
+        font-size: 2rem;
+    }
+    
+    .nombre_propuesto h2 {
+        font-size: 1.2rem;
+    }
+}
